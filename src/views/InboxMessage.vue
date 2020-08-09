@@ -16,9 +16,4 @@ export default {
 .height-full {
   height: 35.7rem;
 }
-@media (max-width: 700px) {
-  .height-full {
-    height: 28.4rem;
-  }
-}
 </style>
