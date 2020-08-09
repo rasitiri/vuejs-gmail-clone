@@ -12,19 +12,22 @@ const routes = [
   {
     path: "/sent",
     name: "SendMessage",
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/SendMessage.vue")
+    component: () => import("../views/SendMessage.vue")
   },
   {
     path: "/starred",
     name: "StarredMessage",
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/StarredMessage.vue")
+    component: () => import("../views/StarredMessage.vue")
   },
   {
     path: "/snoozed",
     name: "SnoozedMessage",
     component: () => import("../views/SnoozedMessage.vue")
+  },
+  {
+    path: "/message",
+    name: "Message",
+    component: () => import("../views/Message.vue")
   }
 ];
 

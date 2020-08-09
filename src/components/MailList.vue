@@ -14,16 +14,16 @@
         :size="iconSize"
         :class="[isHover ? 'text-gray-600' : 'text-gray-400']"
       ></label-variant>
-      <p class="text-sm text-gray-900 mx-2">
+      <router-link to="/message" class="text-sm text-gray-900 mx-2">
         Reddit
-      </p>
+      </router-link>
     </div>
-    <div class="col-span-6 flex items-center">
+    <router-link tag="div" to="/message" class="col-span-6 flex items-center">
       <p class="text-sm text-gray-900 lg:my-0 my-1">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis deserunt
         quibusdam iste odio
       </p>
-    </div>
+    </router-link>
     <div class="col-span-1 flex justify-end items-center">
       <p v-if="!isHover" class="text-xs text-gray-700">1:43 AM</p>
       <span v-else class="flex">
