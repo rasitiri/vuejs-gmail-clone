@@ -1,6 +1,6 @@
 <template>
-  <div class="py-3">
-    <div class="grid grid-cols-10">
+  <div class="py-3 overflow-y-hidden">
+    <div class="lg:grid lg:grid-cols-10">
       <gmail-sidebar></gmail-sidebar>
       <!-- This field is main section. -->
       <div class="col-span-8">

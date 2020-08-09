@@ -1,12 +1,12 @@
 <template>
   <div class="border-b py-2">
-    <div class="grid grid-cols-10 gap-1">
-      <div class="col-span-2 pl-5 flex items-center">
-        <div class="mx-1">
+    <div class="lg:grid lg:grid-cols-10 lg:gap-1 lg:mx-auto flex flex-col">
+      <div class="col-span-2 pl-5 flex items-center mx-auto lg:mx-0">
+        <div class="lg:mx-1 lg:inline hidden">
           <menu-icon></menu-icon>
         </div>
         <router-link to="/">
-          <div class="mx-3">
+          <div class="lg:mx-3">
             <img
               class="gb_ua"
               src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_1x.png"
@@ -21,8 +21,13 @@
           </div>
         </router-link>
       </div>
-      <div :class="[isFocused ? onFocusStyle : normalStyle]">
-        <div class="flex items-center border-none py-3">
+      <div
+        :class="[
+          isFocused ? onFocusStyle : normalStyle,
+          'w-4/5 mx-auto lg:mx-0 lg:w-full'
+        ]"
+      >
+        <div class="flex items-center border-none lg:py-3 py-2">
           <search-icon class="text-gray-700 px-3"></search-icon>
           <input
             @focus="onFocus"
@@ -35,7 +40,9 @@
           <arrow-downward class="text-gray-700 px-2"></arrow-downward>
         </div>
       </div>
-      <div class="col-span-3 flex items-center justify-end pr-5">
+      <div
+        class="col-span-3 flex items-center justify-end pr-5 mx-auto lg:mx-0 my-1"
+      >
         <div class="flex items-center">
           <help-icon class="mx-2 text-gray-700"></help-icon>
           <settings-icon class="mx-2 text-gray-700"></settings-icon>

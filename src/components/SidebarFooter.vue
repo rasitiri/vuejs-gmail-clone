@@ -1,5 +1,5 @@
 <template>
-  <div class="border-t absolute w-1/5 py-1 bottom-0 flex">
+  <div class="border-t absolute w-1/5 py-1 bottom-0 lg:flex hidden">
     <div class="mx-auto flex">
       <account-icon class="text-gray-600" :size="iconSize"></account-icon>
       <hangouts-chat-icon
