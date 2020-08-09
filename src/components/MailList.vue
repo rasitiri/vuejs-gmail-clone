@@ -4,7 +4,7 @@
     @mouseleave="onMouseLeave"
     :class="[isHover ? onHoverStyle : normalStyle]"
   >
-    <div class="col-span-2 flex items-center">
+    <div class="lg:col-span-2 flex items-center">
       <input type="checkbox" />
       <star-icon
         :size="iconSize"
@@ -19,7 +19,7 @@
       </p>
     </div>
     <div class="col-span-6 flex items-center">
-      <p class="text-sm text-gray-900">
+      <p class="text-sm text-gray-900 lg:my-0 my-1">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis deserunt
         quibusdam iste odio
       </p>
@@ -61,9 +61,9 @@ export default {
       iconSize: 22,
       isHover: false,
       onHoverStyle:
-        "border-b border-gray-400 grid grid-cols-9 gap-5 px-5 py-2 bg-gray-200 shadow-2xl cursor-pointer",
+        "border-b border-gray-400 lg:grid lg:grid-cols-9 lg:gap-5 px-5 py-2 bg-gray-200 shadow-2xl cursor-pointer",
       normalStyle:
-        "border-b border-gray-300 grid grid-cols-9 gap-5 px-5 py-2 bg-gray-200"
+        "border-b border-gray-300 lg:grid lg:grid-cols-9 lg:gap-5 px-5 py-2 bg-gray-200"
     };
   },
   methods: {

@@ -1,7 +1,7 @@
 <template>
   <div class="border-b py-2">
     <div class="lg:grid lg:grid-cols-10 lg:gap-1 lg:mx-auto flex flex-col">
-      <div class="col-span-2 pl-5 flex items-center mx-auto lg:mx-0">
+      <div class="col-span-2 lg:pl-5 flex items-center mx-auto lg:mx-0">
         <div class="lg:mx-1 lg:inline hidden">
           <menu-icon></menu-icon>
         </div>
