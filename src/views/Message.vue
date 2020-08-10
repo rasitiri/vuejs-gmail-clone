@@ -19,16 +19,16 @@
         <open-in-new :size="iconSize" class="text-gray-600"></open-in-new>
       </div>
     </div>
-    <div class="mt-4 pl-4">
+    <div class="mt-4 lg:pl-4">
       <div class="flex justify-between">
-        <div class="flex">
+        <div class="flex mx-auto lg:mx-0 md:mx-0">
           <img
             src="https://ssl.gstatic.com/ui/v1/icons/mail/profile_mask2.png"
             alt="icon"
             width="38"
-            class="bg-gray-400 rounded-full"
+            class="bg-gray-400 md:ml-0 sm:ml-0 lg:ml-0 rounded-full lg:inline hidden"
           />
-          <div class="ml-3">
+          <div class="lg:ml-3">
             <p class="text-sm font-semibold text-gray-800">
               {{ senderName }}
             </p>
@@ -43,7 +43,7 @@
           <p class="text-xs text-gray-600 ml-1 block">{{ senderMail }}</p>
         </div>
         <div class="flex text-gray-600 mr-8">
-          <p class="text-xs mr-5">1:14 AM (1 hour ago)</p>
+          <p class="text-xs mr-5 lg:inline hidden">1:14 AM (1 hour ago)</p>
           <star-icon :size="iconSize"></star-icon>
           <reply-icon :size="iconSize" class="mx-4"></reply-icon>
           <dots-vertical :size="iconSize"></dots-vertical>
